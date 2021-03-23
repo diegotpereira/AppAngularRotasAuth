@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthGuard } from './services/auth/auth.guard';
+
 const routes: Routes = [
   { path: 'home', component: HomeComponent,
     canActivate: [AuthGuard] },
